@@ -3,6 +3,6 @@ stages:
   steps:
   - runScriptConfig:
       image: python:latest
-      shellScript: build
+      shellScript: ' python -u testPython.py'
 timeout: 60
 notification: {}
