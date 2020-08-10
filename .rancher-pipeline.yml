@@ -6,7 +6,6 @@ stages:
       shellScript: |-
         python --version
         pwd && ls
-        python ./testPython2/testPython.py
-        python ./testPython.py
+        python ./testPython2/testPython2.py
 timeout: 60
 notification: {}
