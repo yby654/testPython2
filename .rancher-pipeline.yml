@@ -10,7 +10,7 @@ stages:
 - name: sonarqube
   steps:
   - runScriptConfig:
-      image: sonarqube
+      image: aexea/sonarscanner
       shellScript: |-
         sonar-scanner \
           -Dsonar.projectKey=sonar-py \
