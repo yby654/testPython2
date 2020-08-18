@@ -7,15 +7,5 @@ stages:
         python --version
         pwd && ls
         python ./testPython2/testPython2.py
-- name: sonarqube
-  steps:
-  - runScriptConfig:
-      image: aexea/sonarscanner
-      shellScript: |-
-        sonar-scanner \
-          -Dsonar.projectKey=sonar-py \
-          -Dsonar.sources=. \
-          -Dsonar.host.url=http://192.168.139.128:15001 \
-          -Dsonar.login=ec66e47406d613371572ce0ab32a27a36cce40db
 timeout: 60
 notification: {}
